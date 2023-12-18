@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class DataConversor {
 	private ObjectMapper mapper = new ObjectMapper();
 
-	public <T> T toObjetc(String json, Class<T> clazz) {
+	public <T> T toObject(String json, Class<T> clazz) {
 		try {
 			return mapper.readValue(json, clazz);
 		} catch (JsonProcessingException e) {
